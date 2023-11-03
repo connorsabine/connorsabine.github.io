@@ -3,7 +3,7 @@ layout: post
 title:  Python Discord Bot
 description: Creating a basic discord bot with Hikari Lightbulb in Python.
 date:   2023-11-01 12:00:00 +0300
-image:  '/images/20.jpg'
+image:  '/images/04.jpg'
 tags:   [Python, Discord, Bot, Hikari Lightbulb]
 ---
 
@@ -37,8 +37,23 @@ pip install hikari, hikari-lightbulb
 
 ### Creating a Basic Application
 {% highlight py %}
+# Import your Libraries
 import hikari
 import hikari-lightbulb
+
+# Instantiate a Bot Instance
+bot = lightbulb.BotApp(token="YOUR-TOKEN-HERE")
+
+# Register the Command to the Bot
+@bot.command
+@lightbulb.command("ping", "checks the bot is alive")
+@lightbulb.implements(lightbulb.PrefixCommand)
+async def ping(ctx: lightbulb.Context) -> None:
+    # Send a message to the channel the command was used in
+    await ctx.respond("Pong!")
+
+# Run the Bot
+bot.run()
 {% endhighlight %}
 
 
