@@ -36,6 +36,9 @@ pip install hikari, hikari-lightbulb
 
 
 ### Creating a Basic Application
+
+We can make an application to use slash commands in only a few lines of code. Heres a simple command that responds with "Pong!" when the command is run. 
+
 {% highlight py %}
 # Import your Libraries
 import hikari
@@ -46,7 +49,7 @@ bot = lightbulb.BotApp(token="YOUR-TOKEN-HERE")
 
 # Register the Command to the Bot
 @bot.command
-@lightbulb.command("ping", "checks the bot is alive")
+@lightbulb.command("ping", "a simple first command")
 @lightbulb.implements(lightbulb.PrefixCommand)
 async def ping(ctx: lightbulb.Context) -> None:
     # Send a message to the channel the command was used in
@@ -56,6 +59,28 @@ async def ping(ctx: lightbulb.Context) -> None:
 bot.run()
 {% endhighlight %}
 
+### Breaking the Commands Down
 
+To create a command, there is a few things that need to happen.
+
+{% highlight py %}
+
+# Command Decorator
+@bot.command
+
+# Set Name of Command (ex: "ping")
+# Set Description of Command (ex: "a simple first command")
+@lightbulb.command("ping", "a simple first command")
+
+# Set the Implementations (ex: Command, Group Command, Sub Group Command)
+@lightbulb.implements(lightbulb.PrefixCommand)
+
+# Create Callback Function
+async def ping(ctx: lightbulb.Context) -> None:
+
+    # Responds with "Pong!"
+    await ctx.respond("Pong!")
+
+{% endhighlight %}
 
 
