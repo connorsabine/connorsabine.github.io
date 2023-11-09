@@ -3,7 +3,7 @@ layout: post
 title:  Python Discord Bot
 description: Creating a basic discord bot with Hikari Lightbulb in Python.
 date:   2023-11-01 12:00:00 +0300
-image:  '/images/04.jpg'
+image:  '/images/08.png'
 tags:   [Python, Discord, Bot, Hikari Lightbulb]
 ---
 
@@ -11,7 +11,8 @@ tags:   [Python, Discord, Bot, Hikari Lightbulb]
 
 Discord bots can have so many different uses and applications. They can preform pre-programmed tasks such as notification or moderation and interact with end-users. Or they could be programmed to play your favorite music!
 
-No matter what you want it to do, we first have to create the base.
+No matter what you want it to do, we first have to create a base application.
+
 
 ### Discord Developer Setup
 
@@ -25,6 +26,7 @@ Before we can write the code, we need to get our authentication credentials and 
 6. Save your "Token" in a safe place 
 
 Do not share your token with anyone!
+
 
 ### Installing Required Libraries
 
@@ -59,7 +61,8 @@ async def ping(ctx: lightbulb.Context) -> None:
 bot.run()
 {% endhighlight %}
 
-### Breaking the Commands Down
+
+### Breaking it Down
 
 To create a command, there is a few things that need to happen.
 
