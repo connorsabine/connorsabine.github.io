@@ -1,8 +1,0 @@
----
-layout: page
-title: Games
-permalink: /games/
-image: '/images/GamingPageBackground.jpg'
----
-
-
