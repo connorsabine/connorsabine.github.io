@@ -4,7 +4,7 @@ title:  Python Discord Bot
 description: Creating a basic discord bot with Hikari Lightbulb in Python.
 date:   2023-11-01 12:00:00 +0300
 image:  '/images/08.png'
-tags:   [Python, Discord, Bot, Hikari Lightbulb]
+tags:   [Python, Discord, Bot]
 ---
 
 ### Introduction

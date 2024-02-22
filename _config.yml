@@ -21,13 +21,6 @@ hero:
   description: Dev log.
   image: '/images/01.jpg'
 
-
-#-------------------------------
-# Games Settings
-games:
-  wordle: true
-  tictactoe: true
-
 #-------------------------------
 # Contact Settings
 contact:
