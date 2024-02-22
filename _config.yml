@@ -4,7 +4,7 @@ title: Connor
 logo: # You can add own logo. For example '/images/logo.png'.
 description: Dev log.
 baseurl: "" # The subpath of your site, e.g. /blog
-url: "" # The base hostname & protocol for your site, e.g. http://example.com
+url: "http://connorsabine.com"
 
 
 #-------------------------------
@@ -23,6 +23,12 @@ hero:
 
 
 #-------------------------------
+# Games Settings
+games:
+  wordle: true
+  tictactoe: true
+
+#-------------------------------
 # Contact Settings
 contact:
   email: connor@connorsabine.com # Add your email for contact form
@@ -33,9 +39,6 @@ contact:
 
 
 #-------------------------------
-# Footer section
-# Example of adding a new link to the footer - {icon: "ion-logo-github", link: "https://github.com"}
-# Other icons can be found at https://ionicons.com/v4/
 social:
 - {icon: "ion-logo-twitter", link: "https://twitter.com/connor_sabine"}
 - {icon: "ion-logo-github", link: "https://github.com/connorsabine"}

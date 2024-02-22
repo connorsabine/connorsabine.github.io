@@ -5,3 +5,13 @@ permalink: /games/
 image: '/images/GamingPageBackground.jpg'
 ---
 
+<div class="grid-container">
+  {% for i in (1..9) %}
+    {% for j in (1..9) %}
+      <div class="grid-item">
+        <img src="/path/to/image{{ i }}{{ j }}.jpg" alt="Image {{ i }}{{ j }}">
+      </div>
+    {% endfor %}
+  {% endfor %}
+</div>
+
