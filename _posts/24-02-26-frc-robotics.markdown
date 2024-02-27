@@ -15,52 +15,64 @@ The teams are challenged to develop a robot under strict rules, and limited fund
 This is a guide to teams coding their robot in Java. Following these steps will help you set up a programming laptop with all of the required programs.
 
 
+
 ### Installation
 
 Before any programming, first we must install all of the required programs. 
 
-1. WPILib
+## WPILib
 
-    What is it?
-    WPILib is a plugin for VSCode built to assist your team with specific functions while building your robot (ex. Deploying Code to Robot)
+# What is it?
 
-
-    How to install:
-    [Download the latest release](https://github.com/wpilibsuite/allwpilib/releases)
+WPILib is a plugin for VSCode built to assist your team with specific functions while building your robot (ex. Deploying Code to Robot)
 
 
-2. Game Tools
+# How to install:
 
-    What is it?
-    Game tools are the dependencies that must be installed on your computer to run the robot at competition (ex. Driver Station)
-
-
-    How to install:
-    [Download the latest release](https://www.ni.com/en/support/downloads/drivers/download.frc-game-tools.html#500107)
+[Download the latest release](https://github.com/wpilibsuite/allwpilib/releases)
 
 
-3. Motor Software (CANVenom or Other)
+## Game Tools
 
-    What is it?
-    Most motors require external software to run correctly or to configure, find the package for your motors on their respective site
+# What is it?
 
-
-    How to install:
-    1. Click on the WPILib Command Pallet icon on the top right corner of the VS Code window
-    2. Select WPILib: Manage Vendor Libraries
-    3. Then select Install new library (online) end enter your package URL (found on motor provider website)
-
-    CANVenom:
-    https://www.playingwithfusion.com/frc/playingwithfusion(THE CURRENT YEAR).json
+Game tools are the dependencies that must be installed on your computer to run the robot at competition (ex. Driver Station)
 
 
-    SparkMAX:
-    https://software-metadata.revrobotics.com/REVLib-(THE CURRENT YEAR).json
+# How to install:
 
-    4. Press Enter and wait for install
+[Download the latest release](https://www.ni.com/en/support/downloads/drivers/download.frc-game-tools.html#500107)
 
 
-    If everything works, a folder named vendordeps will be created in the root directory of the project.
+## Motor Software (CANVenom or Other)
+
+# What is it?
+Most motors require external software to run correctly or to configure, find the package for your motors on their respective site
+
+
+# How to install:
+
+1. Click on the WPILib Command Pallet icon on the top right corner of the VS Code window
+
+2. Select WPILib: Manage Vendor Libraries
+
+3. Then select Install new library (online) end enter your package URL (found on motor provider website)
+
+
+CANVenom:
+
+https://www.playingwithfusion.com/frc/playingwithfusion(THE CURRENT YEAR).json
+
+
+SparkMAX:
+
+https://software-metadata.revrobotics.com/REVLib-(THE CURRENT YEAR).json
+
+4. Press Enter and wait for install
+
+
+If everything works, a folder named vendordeps will be created in the root directory of the project.
+
 
 
 ### Creating a Project in WPILib
@@ -88,11 +100,13 @@ Before starting to code, first your team has to create a WPILib project.
 10. Generate project
 
 
+
 ### Pushing Project to GIT
 
 To keep track of and protect your code, it is best to upload it to GitHub. It will keep track of all previous versions and ensure that no hardware failure can end your season.
 
 For a simple tutorial on how to upload to git, see my this post:
+
 
 
 ### CANVenom Setup
