@@ -3,7 +3,7 @@ layout: post
 title:  The Basics of Git Commandline
 description: The basic steps for pushing a folder to GitHub through git commandline.
 date:   2024-02-25 12:00:00 +0300
-image:  '/images/08.png'
+image:  '/images/github.png'
 tags:   [GitHub]
 ---
 

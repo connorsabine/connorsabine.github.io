@@ -3,7 +3,7 @@ layout: post
 title:  Starting a FRC Java Bot
 description: The basic steps for beginning to create a project for a Java FIRST Robotics Competition robot.
 date:   2024-02-26 12:00:00 +0300
-image:  '/images/08.png'
+image:  '/images/frc.png'
 tags:   [FRC, FIRST Robotics Competition, Robotics]
 ---
 
