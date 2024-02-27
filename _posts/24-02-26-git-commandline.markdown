@@ -7,15 +7,19 @@ image:  '/images/github.png'
 tags:   [GitHub]
 ---
 
-### Introduction
+# Introduction
 
 Do you have any projects that you want to ensure that they wont be forgotten or lost? Upload them to Git.
 
- This will ensure that your code can be accessed from anywhere, and is kept safe from hardware failure.
+This will ensure that your code can be accessed from anywhere, and is kept safe from hardware failure.
 
 
-### GIT Install & Configuration
 
+# GIT Install & Configuration
+
+Installing and setting up git for your computer and repository.
+
+{% highlight markdown %}
 1. Install GIT
 
 2. Open terminal
@@ -35,13 +39,18 @@ Do you have any projects that you want to ensure that they wont be forgotten or 
 6. Create project/repository on GitHub
     What does this do?
     Creates a project on GitHub which will be used to store your files
+{% endhighlight %}
 
 
-### Pushing to GIT
 
-1. Run cd /path/to/your/WPILib/project
+# Pushing to GIT
+
+Pushing your project to the created github repository.
+
+{% highlight markdown %}
+1. Run cd /path/to/your/project
     What does this do?
-    Changes your active directory to that file, allowing your following commands to apply directly to that folder
+    Changes your active directory to a file, following commands apply to that folder
 
 2. Run git init
     What does this do?
@@ -49,8 +58,9 @@ Do you have any projects that you want to ensure that they wont be forgotten or 
 
 3. Run git add --all
     What does this do?
-    Adds all changed files to your staging area, getting them ready to be committed to your repository
+    Adds all changed files to your staging area, prepares for commit
 
 4. Run git commit -m "First commit!"
     What does this do?
-    Commits all of the staged changes to your github repository, the text inside of the quotes is the commit message
+    Commits all of the staged changes to your github repository with a message
+{% endhighlight %}
