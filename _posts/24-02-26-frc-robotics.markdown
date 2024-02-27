@@ -22,55 +22,43 @@ Before any programming, first we must install all of the required programs.
 1. WPILib
 
     What is it?
-
     WPILib is a plugin for VSCode built to assist your team with specific functions while building your robot (ex. Deploying Code to Robot)
 
 
     How to install:
-
-    Download the latest release from: https://github.com/wpilibsuite/allwpilib/releases
+    [Download the latest release](https://github.com/wpilibsuite/allwpilib/releases)
 
 
 2. Game Tools
 
     What is it?
-
     Game tools are the dependencies that must be installed on your computer to run the robot at competition (ex. Driver Station)
 
 
     How to install:
-
-    Download the latest release from: https://www.ni.com/en/support/downloads/drivers/download.frc-game-tools.html#500107
+    [Download the latest release](https://www.ni.com/en/support/downloads/drivers/download.frc-game-tools.html#500107)
 
 
 3. Motor Software (CANVenom or Other)
 
     What is it?
-
     Most motors require external software to run correctly or to configure, find the package for your motors on their respective site
 
 
     How to install:
+    1. Click on the WPILib Command Pallet icon on the top right corner of the VS Code window
+    2. Select WPILib: Manage Vendor Libraries
+    3. Then select Install new library (online) end enter your package URL (found on motor provider website)
 
-        1. Click on the WPILib Command Pallet icon on the top right corner of the VS Code window
-
-        2. Select WPILib: Manage Vendor Libraries
-
-        3. Then select Install new library (online) end enter your package URL (found on motor provider website)
-
-
-        CANVenom:
-
-        https://www.playingwithfusion.com/frc/playingwithfusion(THE CURRENT YEAR).json
+    CANVenom:
+    https://www.playingwithfusion.com/frc/playingwithfusion(THE CURRENT YEAR).json
 
 
-        SparkMAX:
+    SparkMAX:
+    https://software-metadata.revrobotics.com/REVLib-(THE CURRENT YEAR).json
 
-        https://software-metadata.revrobotics.com/REVLib-(THE CURRENT YEAR).json
+    4. Press Enter and wait for install
 
-
-        4. Press Enter and wait for install
-        
 
     If everything works, a folder named vendordeps will be created in the root directory of the project.
 
