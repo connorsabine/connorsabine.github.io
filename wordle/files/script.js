@@ -15298,10 +15298,11 @@ const keyboard = document.querySelector("[data-keyboard]");
 const guessGrid = document.querySelector("[data-guess-grid]");
 const alertContainer = document.querySelector("[data-alert-container]");
 
-const offsetFromDate = new Date(2022, 2, 1);
-const msOffset = Date.now() - offsetFromDate;
-const dayOffset = msOffset / 1000 / 60 / 60 / 24;
-const targetWord = targetWords[Math.floor(dayOffset)];
+// const offsetFromDate = new Date(2022, 2, 1);
+// const msOffset = Date.now() - offsetFromDate;
+// const dayOffset = msOffset / 1000 / 60 / 60 / 24;
+// const targetWord = targetWords[Math.floor(dayOffset)];
+const targetWord = targetWords[Math.floor(Math.random() * targetWords.length)];
 
 startInteraction();
 
