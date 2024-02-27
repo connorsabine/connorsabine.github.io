@@ -83,3 +83,22 @@ Before starting to code, first your team has to create a WPILib project.
 To keep track of and protect your code, it is best to upload it to GitHub. It will keep track of all previous versions and ensure that no hardware failure can end your season.
 
 For a simple tutorial on how to upload to git, see my this post:
+
+
+### CANVenom Setup
+
+If your team is using CANVenom motors, follow these simple steps to set the CAN Ids for the motors. 
+
+1. Connect to RIO via Ethernet or WiFi
+
+2. Deploy Code through WPILib
+
+3. Open Driver Station
+
+4. Enable Teleop
+
+5. Navigate to roboRIO online page (ex. 172.11.22.2)
+
+6. Add port 5812 to roboRIO address (ex. 172.11.22.2:5812)
+
+7. Set ids from Playing With Fusion online page
