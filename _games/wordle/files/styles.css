@@ -16,8 +16,8 @@ body {
 
 .keyboard {
 	display: grid;
-	grid-template-columns: repeat(20, minmax(auto, 1.25em));
-	grid-auto-rows: 3em;
+	grid-template-columns: repeat(20, minmax(auto, 1em));
+	grid-auto-rows: 2em;
 	gap: 0.25em;
 	justify-content: center;
 }
@@ -78,8 +78,8 @@ body {
 	justify-content: center;
 	align-content: center;
 	flex-grow: 1;
-	grid-template-columns: repeat(5, 4em);
-	grid-template-rows: repeat(6, 4em);
+	grid-template-columns: repeat(5, 3em);
+	grid-template-rows: repeat(6, 3em);
 	gap: 0.25em;
 	margin-bottom: 1em;
 }
