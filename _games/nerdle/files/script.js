@@ -52,6 +52,10 @@ function handleKeyPress(e) {
 		pressKey(e.key);
 		return;
 	}
+	if (e.key == "0") {
+		pressKey(e.key);
+		return;
+	}
 	if (e.key == "+" || e.key ==  "-" ||  e.key == "*" || e.key ==  "/" || e.key == "=") {
 		pressKey(e.key);
 		return;
