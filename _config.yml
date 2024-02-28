@@ -79,6 +79,10 @@ defaults:
 include:
   - _pages
 
+collections:
+  games:
+    output: true
+
 # Tags
 tag_page_dir:         tag
 tag_page_layout:      tag_page

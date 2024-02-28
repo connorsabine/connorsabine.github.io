@@ -11,4 +11,14 @@
       {% endif %}
     {% endunless %}
   {% endfor %}
+  <div class="dropdown">
+    <span>Games</span>
+      <div class="dropdown-menu">
+      {% for game in site.games %}
+        <div class="dropdown-content">
+          <a href="{{ game.url | prepend: site.baseurl }}" class="nav__link">{{ game.title }}</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </ul>
