@@ -24,8 +24,8 @@ hero:
 #-------------------------------
 # Contact Settings
 contact:
-  email: connor@connorsabine.com # Add your email for contact form
-  description: Contact Me. # Add a description of your forms
+  email: connor@connorsabine.com
+  description: Contact Me.
 
 #-------------------------------
 social:

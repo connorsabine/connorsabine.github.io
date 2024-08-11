@@ -46,7 +46,7 @@ We can make an application to use slash commands in only a few lines of code. He
 {% highlight py %}
 # Import your Libraries
 import hikari
-import hikari-lightbulb
+import lightbulb
 
 # Instantiate a Bot Instance
 bot = lightbulb.BotApp(token="YOUR-TOKEN-HERE")
