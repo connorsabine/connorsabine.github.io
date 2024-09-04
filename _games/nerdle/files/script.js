@@ -111,41 +111,50 @@ function submitGuess() {
 	activeTiles.forEach((...params) => flipTile(...params, guess));
 }
 
+
+// Thanks Charlie :D @CharlieS1103
 function flipTile(tile, index, array, guess) {
-	const letter = tile.dataset.letter;
-	const key = keyboard.querySelector(`[data-key="${letter}"i]`);
-	setTimeout(() => {
-		tile.classList.add("flip");
-	}, (index * FLIP_ANIMATION_DURATION) / 2);
+    const letter = tile.dataset.letter;
+    const key = keyboard.querySelector(`[data-key="${letter}"i]`);
 
-	tile.addEventListener(
-		"transitionend",
-		() => {
-			tile.classList.remove("flip");
-			if (targetEquation[index] === letter) {
-				tile.dataset.state = "correct";
-				key.classList.add("correct");
-			} else if (targetEquation.includes(letter)) {
-				tile.dataset.state = "wrong-location";
-				key.classList.add("wrong-location");
-			} else {
-				tile.dataset.state = "wrong";
-				key.classList.add("wrong");
-			}
+    setTimeout(() => {
+        tile.classList.add("flip");
+    }, (index * FLIP_ANIMATION_DURATION) / 2);
 
-			if (index === array.length - 1) {
-				tile.addEventListener(
-					"transitionend",
-					() => {
-						startInteraction();
-						checkWinLose(guess, array);
-					},
-					{ once: true }
-				);
-			}
-		},
-		{ once: true }
-	);
+    tile.addEventListener(
+        "transitionend",
+        () => {
+            tile.classList.remove("flip");
+            const correctPosition = targetEquation[index];
+            if (correctPosition === letter) {
+                tile.dataset.state = "correct";
+                key.classList.add("correct");
+            } else {
+                const letterExists = targetEquation.includes(letter);
+                const isCorrectLocation = [...guess].some((char, idx) => char === letter && targetEquation[idx] === letter);
+
+                if (letterExists && !isCorrectLocation) {
+                    tile.dataset.state = "wrong-location";
+                    key.classList.add("wrong-location");
+                } else {
+                    tile.dataset.state = "wrong";
+                    key.classList.add("wrong");
+                }
+            }
+
+            if (index === array.length - 1) {
+                tile.addEventListener(
+                    "transitionend",
+                    () => {
+                        startInteraction();
+                        checkWinLose(guess, array);
+                    },
+                    { once: true }
+                );
+            }
+        },
+        { once: true }
+    );
 }
 
 function getActiveTiles() {
